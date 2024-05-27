@@ -1,9 +1,16 @@
 import express from 'express';
 const app = express();
 
+var data = { 
+  portal : "GeeksforGeeks", 
+  knowledge : "unlimited", 
+  location : "Noida"  
+} 
+
+
 app.get('/', (req, res) => {
   console.log("sdflkjsdlfhjlsjdhlfsjdhlkf");
-  res.send('Hello World!');
+  return res.send(data);
 });
 
 export default app;
